@@ -1,0 +1,91 @@
+.container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f4f4f4;
+    min-height: 100vh;
+}
+
+/* TOP CARDS */
+.top-cards {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.card {
+    flex: 1;
+    background: #e0e0e0;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.card.active {
+    background: #d6d6d6;
+    opacity: 1;
+    border: 2px solid #aaa;
+}
+
+.icon {
+    font-size: 24px;
+}
+
+.status {
+    font-size: 12px;
+    color: gray;
+}
+
+/* LIVE SECTION */
+.live-section {
+    text-align: center;
+}
+
+.live-label {
+    font-size: 12px;
+    color: gray;
+}
+
+.match-box {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.time {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.score {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* BUTTON */
+.watch-btn {
+    background: #4da6ff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.watch-btn:hover {
+    background: #3399ff;
+}

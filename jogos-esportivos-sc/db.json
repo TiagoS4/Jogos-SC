@@ -1,0 +1,13 @@
+{
+    "matches": [
+        {
+            "id": 1,
+            "homeTeam": "Time 3",
+            "awayTeam": "Time 5",
+            "homeScore": 2,
+            "awayScore": 2,
+            "status": "Primeiro tempo",
+            "time": "35:36"
+        }
+    ]
+}
