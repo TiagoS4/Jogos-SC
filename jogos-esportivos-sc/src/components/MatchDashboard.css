@@ -69,6 +69,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 8px;
+}
+
+.team-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.result {
+    font-size: 28px;
+    font-weight: bold;
 }
 
 .result {

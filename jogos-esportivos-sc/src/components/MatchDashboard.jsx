@@ -1,50 +1,46 @@
-import { useEffect, useState } from "react";
+import { matches } from "../data/matches";
 import "./MatchDashboard.css";
 
 export default function MatchDashboard() {
-    const [match, setMatch] = useState(null);
-
-    async function fetchMatch() {
-        const response = await fetch("http://localhost:3001/matches/1");
-        const data = await response.json();
-
-        setMatch(data);
-    }
-
-    useEffect(() => {
-        fetchMatch();
-
-        // Atualiza automaticamente a cada 2 segundos
-        const interval = setInterval(fetchMatch, 2000);
-
-        return () => clearInterval(interval);
-    }, []);
-
-    if (!match) {
-        return <h1>Carregando...</h1>;
-    }
-
     return (
         <div className="container">
-            <div className="match-box">
-                <h2>{match.status}</h2>
+            {matches.map((match) => (
+                <div className="match-box" key={match.id}>
+                    {match.live && (
+                        <span className="live-badge">🔴 AO VIVO</span>
+                    )}
 
-                <p className="time">{match.time}</p>
+                    <h2>{match.status}</h2>
 
-                <div className="score">
-                    <div>
-                        <h3>{match.homeTeam}</h3>
-                    </div>
+                    <p>{match.time}</p>
 
-                    <span>
-                        {match.homeScore} - {match.awayScore}
-                    </span>
+                    <div className="score">
+                        <div className="team">
+                            <h3>{match.homeTeam}</h3>
 
-                    <div>
-                        <h3>{match.awayTeam}</h3>
+                            <img
+                                src={match.homeLogo}
+                                alt={match.homeTeam}
+                                className="team-logo"
+                            />
+                        </div>
+
+                        <span className="result">
+                            {match.homeScore} - {match.awayScore}
+                        </span>
+
+                        <div className="team">
+                            <h3>{match.awayTeam}</h3>
+
+                            <img
+                                src={match.awayLogo}
+                                alt={match.awayTeam}
+                                className="team-logo"
+                            />
+                        </div>
                     </div>
                 </div>
-            </div>
+            ))}
         </div>
     );
 }
