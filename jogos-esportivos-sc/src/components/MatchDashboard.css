@@ -101,3 +101,42 @@
 .watch-btn:hover {
     background: #3399ff;
 }
+
+/* SEÇÕES */
+.small-section {
+    margin-top: 40px;
+}
+
+.small-section h2 {
+    margin-bottom: 15px;
+}
+
+/* CONTAINER DOS RETÂNGULOS */
+.small-cards {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* RETÂNGULOS */
+.small-card {
+    background: white;
+    border-radius: 12px;
+
+    padding: 12px 18px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    min-width: 150px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ESCUDOS PEQUENOS */
+.small-logo {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}

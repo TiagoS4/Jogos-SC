@@ -1,7 +1,7 @@
 import Criciuma from "../assets/Criciuma.png";
 import Juventude from "../assets/Juventude.png"
 
-export const matches = [
+export const featuredMatches = [
     {
         id: 1,
         homeTeam: "Criciúma",
@@ -12,17 +12,40 @@ export const matches = [
         awayScore: 0,
         status: "Encerrado",
         time: "Finalizado em 09/05/2026",
-        live: true
+        live: false
+    },
+];
+
+export const recentMatches = [
+    {
+        id: 2,
+        homeLogo: Criciuma,
+        awayLogo: Juventude,
+        homeScore: 2,
+        awayScore: 0
     },
 
     {
-        id: 2,
-        homeTeam: "Time 3",
-        awayTeam: "Time 4",
-        homeScore: 0,
-        awayScore: 0,
-        status: "xx/xx/xxxx",
-        time: "19:00",
-        live: false
+        id: 3,
+        homeLogo: Criciuma,
+        awayLogo: Juventude,
+        homeScore: 1,
+        awayScore: 1
+    }
+];
+
+export const upcomingMatches = [
+    {
+        id: 4,
+        homeLogo: Criciuma,
+        awayLogo: Juventude,
+        time: "19:00"
+    },
+
+    {
+        id: 5,
+        homeLogo: Criciuma,
+        awayLogo: Juventude,
+        time: "21:30"
     }
 ];
