@@ -1,12 +1,19 @@
 import {
     featuredMatches,
     recentMatches,
-    upcomingMatches
+    upcomingMatches,
+    teamUpcomingMatches,
+    teams
 } from "../data/matches";
 
 import "./MatchDashboard.css";
+import { useState } from "react";
+import MatchModal from "./MatchModal";
+import TeamModal from "./TeamModal";
 
 export default function MatchDashboard() {
+    const [selectedMatch, setSelectedMatch] = useState(null);
+    const [selectedTeam, setSelectedTeam] = useState(null);
     return (
         <div className="container">
 
@@ -31,10 +38,13 @@ export default function MatchDashboard() {
 
                     <p>{match.time}</p>
 
+                    <p className="date">{match.date}</p>
+
                     <div className="score">
                         <Team
                             name={match.homeTeam}
                             logo={match.homeLogo}
+                            onLogoClick={setSelectedTeam}
                         />
 
                         <span className="result">
@@ -44,6 +54,7 @@ export default function MatchDashboard() {
                         <Team
                             name={match.awayTeam}
                             logo={match.awayLogo}
+                            onLogoClick={setSelectedTeam}
                         />
                     </div>
                 </div>
@@ -57,9 +68,9 @@ export default function MatchDashboard() {
                     {recentMatches.map((match) => (
                         <SmallMatchCard
                             key={match.id}
-                            homeLogo={match.homeLogo}
-                            awayLogo={match.awayLogo}
+                            match={match}
                             centerText={`${match.homeScore} - ${match.awayScore}`}
+                            onClick={() => setSelectedMatch(match)}
                         />
                     ))}
                 </div>
@@ -73,43 +84,97 @@ export default function MatchDashboard() {
                     {upcomingMatches.map((match) => (
                         <SmallMatchCard
                             key={match.id}
-                            homeLogo={match.homeLogo}
-                            awayLogo={match.awayLogo}
-                            centerText={match.time}
+                            match={match}
+                            centerText={`${match.date} - ${match.time}`}
+                            onClick={() => setSelectedMatch(match)}
                         />
                     ))}
                 </div>
             </section>
-        </div>
-    );
-}
+            <section className="teams-section">
 
-function Team({ name, logo }) {
-    return (
-        <div className="team">
-            <h3>{name}</h3>
+                <h2>Times</h2>
 
-            <img
-                src={logo}
-                alt={name}
-                className="team-logo"
+                <div className="teams-list">
+
+                    {teams.map((team) => (
+                        <button
+                            key={team.id}
+                            className="team-button"
+                            onClick={() => setSelectedTeam(team.name)}
+                        >
+                            <img
+                                src={team.logo}
+                                alt={team.name}
+                                className="bottom-team-logo"
+                            />
+                        </button>
+                    ))}
+
+                </div>
+
+            </section>
+            <MatchModal
+                match={selectedMatch}
+                onClose={() => setSelectedMatch(null)}
+            />
+            <TeamModal
+                teamName={selectedTeam}
+                matches={
+                    selectedTeam
+                        ? teamUpcomingMatches[selectedTeam]
+                        : []
+                }
+                onClose={() => setSelectedTeam(null)}
             />
         </div>
     );
 }
 
-function SmallMatchCard({
-    homeLogo,
-    awayLogo,
-    centerText
+function Team({
+    name,
+    logo,
+    onLogoClick
 }) {
     return (
-        <div className="small-card">
-            <img src={homeLogo} className="small-logo" />
+        <div className="team">
+            <h3>{name}</h3>
+
+            <button
+                className="logo-button"
+                onClick={() => onLogoClick(name)}
+            >
+                <img
+                    src={logo}
+                    alt={name}
+                    className="team-logo"
+                />
+            </button>
+        </div>
+    );
+}
+
+function SmallMatchCard({
+    match,
+    centerText,
+    onClick
+}) {
+    return (
+        <div
+            className="small-card"
+            onClick={onClick}
+        >
+            <img
+                src={match.homeLogo}
+                className="small-logo"
+            />
 
             <span>{centerText}</span>
 
-            <img src={awayLogo} className="small-logo" />
+            <img
+                src={match.awayLogo}
+                className="small-logo"
+            />
         </div>
     );
 }

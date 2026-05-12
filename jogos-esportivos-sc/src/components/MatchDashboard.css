@@ -37,6 +37,12 @@
 }
 
 /* LIVE SECTION */
+
+.date {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
 .live-section {
     text-align: center;
 }
@@ -153,4 +159,57 @@
 .stadium {
     color: gray;
     font-size: 14px;
+}
+
+.logo-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.logo-button:hover {
+    transform: scale(1.05);
+}
+
+/* SEÇÃO DOS TIMES */
+.teams-section {
+    margin-top: 40px;
+}
+
+.teams-list {
+    display: flex;
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    margin-top: 15px;
+}
+
+/* BOTÃO */
+.team-button {
+    background: white;
+
+    border: none;
+
+    border-radius: 12px;
+
+    padding: 10px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-button:hover {
+    transform: scale(1.05);
+}
+
+/* ESCUDO */
+.bottom-team-logo {
+    width: 60px;
+    height: 60px;
+
+    object-fit: contain;
 }
