@@ -17,6 +17,16 @@ export default function MatchDashboard() {
                         <span className="live-badge">🔴 AO VIVO</span>
                     )}
 
+                    <div className="match-info">
+                        <p className="championship">
+                            {match.championship}
+                        </p>
+
+                        <p className="stadium">
+                            📍 {match.stadium}
+                        </p>
+                    </div>
+
                     <h2>{match.status}</h2>
 
                     <p>{match.time}</p>

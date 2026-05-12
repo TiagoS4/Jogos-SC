@@ -140,3 +140,17 @@
     height: 35px;
     object-fit: contain;
 }
+
+.match-info {
+    margin-bottom: 15px;
+}
+
+.championship {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.stadium {
+    color: gray;
+    font-size: 14px;
+}

@@ -4,6 +4,8 @@ import Juventude from "../assets/Juventude.png"
 export const featuredMatches = [
     {
         id: 1,
+        championship: "Campeonato Brasileiro Série B",
+        stadium: "Alfredo Jaconi",
         homeTeam: "Criciúma",
         awayTeam: "Juventude",
         homeLogo: Criciuma,
