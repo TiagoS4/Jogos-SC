@@ -213,6 +213,46 @@ export const recentMatches = [
         time: "15:00",
         status: "Encerrado"
     },
+
+    {
+        id: 10,
+
+        championship: "Campeonato Brasileiro Série B",
+        stadium: "Arena Pantanal",
+
+        homeTeam: "Cuiabá",
+        awayTeam: "Criciúma",
+
+        homeLogo: Cuiaba,
+        awayLogo: Criciuma,
+
+        homeScore: 1,
+        awayScore: 1,
+
+        date: "02/05/2026",
+        time: "18:30",
+        status: "Encerrado"
+    },
+
+    {
+        id: 11,
+
+        championship: "Campeonato Brasileiro Série B",
+        stadium: "Heriberto Hulse",
+
+        homeTeam: "Criciúma",
+        awayTeam: "CRB",
+
+        homeLogo: Criciuma,
+        awayLogo: CRB,
+
+        homeScore: 3,
+        awayScore: 1,
+
+        date: "26/04/2026",
+        time: "20:30",
+        status: "Encerrado"
+    },
 ];
 
 export const upcomingMatches = [
@@ -296,6 +336,46 @@ export const upcomingMatches = [
         status: "Marcado"
     },
 
+    {
+        id: 5,
+
+        championship: "Campeonato Brasileiro Série B",
+        stadium: "Heriberto Hulse",
+
+        homeTeam: "Tubarão",
+        awayTeam: "Atlético-GO",
+
+        homeLogo: Criciuma,
+        awayLogo: AtleticoGO,
+
+        //homeScore: 2,
+        //awayScore: 0,
+
+        date: "17/05/2026",
+        time: "18:30",
+        status: "Marcado"
+    },
+
+    {
+        id: 5,
+
+        championship: "Campeonato Brasileiro Série B",
+        stadium: "Estádio Germano Krüger",
+
+        homeTeam: "Operário",
+        awayTeam: "Criciúma",
+
+        homeLogo: OperarioFerroviario,
+        awayLogo: Criciuma,
+
+        //homeScore: 2,
+        //awayScore: 0,
+
+        date: "24/05/2026",
+        time: "20:30",
+        status: "Marcado"
+    },
+
 ];
 
 export const teamUpcomingMatches = {
@@ -312,12 +392,26 @@ export const teamUpcomingMatches = {
             opponent: "São Paulo",
             date: "25/05",
             time: "21:30"
+        },
+
+        {
+            id: 3,
+            opponent: "Atlético-GO",
+            date: "17/05",
+            time: "18:30"
+        },
+
+        {
+            id: 4,
+            opponent: "Operário",
+            date: "24/05",
+            time: "20:30"
         }
     ],
 
     Juventude: [
         {
-            id: 3,
+            id: 5,
             opponent: "Grêmio",
             date: "21/05",
             time: "18:00"
@@ -326,7 +420,7 @@ export const teamUpcomingMatches = {
 
     Hercílio_Luz: [
         {
-            id: 4,
+            id: 6,
             opponent: "Juventus-SC",
             date: "24/05",
             time: "15:00"
@@ -336,7 +430,7 @@ export const teamUpcomingMatches = {
 
     Juventus_SC: [
         {
-            id: 5,
+            id: 7,
             opponent: "Hercílio Luz",
             date: "24/05",
             time: "15:00"
@@ -346,7 +440,7 @@ export const teamUpcomingMatches = {
 
     Jaraguá_SC: [
         {
-            id: 6,
+            id: 8,
             opponent: "Caravaggio",
             date: "17/05",
             time: "15:00"
@@ -356,14 +450,14 @@ export const teamUpcomingMatches = {
 
     Caravaggio: [
         {
-            id: 7,
+            id: 9,
             opponent: "Jaraguá-SC",
             date: "17/05",
             time: "15:00"
         },
 
         {
-            id: 8,
+            id: 10,
             opponent: "Tubarão",
             date: "24/05",
             time: "15:00"
@@ -373,14 +467,14 @@ export const teamUpcomingMatches = {
 
     Tubarão: [
         {
-            id: 9,
+            id: 11,
             opponent: "Caravaggio",
             date: "24/05",
             time: "15:00"
         },
 
         {
-            id: 10,
+            id: 12,
             opponent: "Metropolitano",
             date: "16/05",
             time: "15:00"
@@ -389,10 +483,28 @@ export const teamUpcomingMatches = {
 
     Metropolitano: [
         {
-            id: 11,
+            id: 13,
             opponent: "Tubarão",
             date: "16/05",
             time: "15:00"
+        }
+    ],
+
+    Atlético_GO: [
+        {
+            id: 14,
+            opponent: "Criciúma",
+            date: "17/05",
+            time: "18:30"
+        }
+    ],
+
+    Operário: [
+        {
+            id: 15,
+            opponent: "Criciúma",
+            date: "24/05",
+            time: "20:30"
         }
     ]
 };
@@ -444,5 +556,17 @@ export const teams = [
         id: 8,
         name: "Metropolitano",
         logo: Metropolitano
+    },
+
+    {
+        id: 9,
+        name: "Atlético_GO",
+        logo: AtleticoGO
+    },
+
+    {
+        id: 10,
+        name: "Operário",
+        logo: OperarioFerroviario
     }
 ];
