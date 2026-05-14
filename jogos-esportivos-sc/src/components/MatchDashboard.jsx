@@ -166,6 +166,7 @@ function SmallMatchCard({
         >
             <img
                 src={match.homeLogo}
+                alt="Logo do time da casa"
                 className="small-logo"
             />
 
@@ -173,6 +174,7 @@ function SmallMatchCard({
 
             <img
                 src={match.awayLogo}
+                alt="Logo do time de fora"
                 className="small-logo"
             />
         </div>

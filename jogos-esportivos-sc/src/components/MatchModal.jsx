@@ -31,6 +31,7 @@ export default function MatchModal({
 
                         <img
                             src={match.homeLogo}
+                            alt="Logo do time da casa"
                             className="team-logo"
                         />
                     </div>
@@ -44,6 +45,7 @@ export default function MatchModal({
 
                         <img
                             src={match.awayLogo}
+                            alt="Logo do time de fora"
                             className="team-logo"
                         />
                     </div>
