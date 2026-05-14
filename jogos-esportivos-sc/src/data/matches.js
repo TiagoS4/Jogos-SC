@@ -356,7 +356,7 @@ export const upcomingMatches = [
         status: "Marcado"
     },
 
-    {
+    /* {
         id: 5,
 
         championship: "Campeonato Brasileiro Série B",
@@ -374,7 +374,7 @@ export const upcomingMatches = [
         date: "24/05/2026",
         time: "20:30",
         status: "Marcado"
-    },
+    },*/
 
 ];
 
@@ -401,12 +401,12 @@ export const teamUpcomingMatches = {
             time: "18:30"
         },
 
-        {
+        /*{
             id: 4,
             opponent: "Operário",
             date: "24/05",
             time: "20:30"
-        }
+        }*/
     ],
 
     Juventude: [
