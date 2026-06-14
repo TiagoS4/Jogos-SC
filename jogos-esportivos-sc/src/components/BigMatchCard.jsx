@@ -29,8 +29,6 @@ export default function BigMatchCard({
 
             <p>{match.time}</p>
 
-            <p>{match.time}</p>
-
             <p className="channels">
                 📺 {match.channels?.join(" • ") || "A definir"}
             </p>
