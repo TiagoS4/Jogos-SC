@@ -25,6 +25,9 @@ export default function MatchModal({
 
                 <p>{match.status}</p>
 
+                <p>
+                    📺 {match.channels?.join(" • ") || "A definir"}
+                </p>
                 <div className="modal-score">
                     <div className="team">
                         <h3>{match.homeTeam}</h3>

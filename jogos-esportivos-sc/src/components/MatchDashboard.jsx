@@ -1,64 +1,80 @@
 import {
+    championshipFeaturedMatches,
+    championships,
     featuredMatches,
     recentMatches,
     upcomingMatches,
     teamUpcomingMatches,
-    teams
+    teams,
+    todayMatches
 } from "../data/matches";
 
 import "./MatchDashboard.css";
 import { useState } from "react";
 import MatchModal from "./MatchModal";
 import TeamModal from "./TeamModal";
+import BigMatchCard from "./BigMatchCard";
+import TodayMatches from "./TodayMatches";
+import HelpModal from "./HelpModal";
 
 export default function MatchDashboard() {
     const [selectedMatch, setSelectedMatch] = useState(null);
     const [selectedTeam, setSelectedTeam] = useState(null);
+    const [selectedChampionship, setSelectedChampionship] =
+        useState("Todos");
+    const [helpOpen, setHelpOpen] = useState(false);
+
+    const filteredMatches =
+        selectedChampionship === "Todos"
+            ? championshipFeaturedMatches
+            : championshipFeaturedMatches.filter(
+                (match) =>
+                    match.championship === selectedChampionship
+            );
+    const isShowingAll =
+        selectedChampionship === "Todos";
+    //const filteredMatches = championshipFeaturedMatches.filter((match) => match.championship === selectedChampionship
+    //);
     return (
         <div className="container">
-
-            {/* JOGOS PRINCIPAIS */}
-            {featuredMatches.map((match) => (
-                <div className="match-box" key={match.id}>
-                    {match.live && (
-                        <span className="live-badge">🔴 AO VIVO</span>
-                    )}
-
-                    <div className="match-info">
-                        <p className="championship">
-                            {match.championship}
-                        </p>
-
-                        <p className="stadium">
-                            📍 {match.stadium}
-                        </p>
+            <div className="championships-container">
+                {championships.map((championship) => (
+                    <button
+                        key={championship.id}
+                        className={`championship-card ${selectedChampionship === championship.name
+                            ? "active"
+                            : ""
+                            }`}
+                        onClick={() =>
+                            setSelectedChampionship(
+                                championship.name
+                            )
+                        }
+                    >
+                        {championship.name}
+                    </button>
+                ))}
+            </div>
+            {
+                isShowingAll ? (
+                    <div className="compact-matches">
+                        {filteredMatches.map((match) => (
+                            <CompactMatchCard
+                                key={match.id}
+                                match={match}
+                            />
+                        ))}
                     </div>
-
-                    <h2>{match.status}</h2>
-
-                    <p>{match.time}</p>
-
-                    <p className="date">{match.date}</p>
-
-                    <div className="score">
-                        <Team
-                            name={match.homeTeam}
-                            logo={match.homeLogo}
-                            onLogoClick={setSelectedTeam}
+                ) : (
+                    filteredMatches.map((match) => (
+                        <BigMatchCard
+                            key={match.id}
+                            match={match}
+                            onTeamClick={setSelectedTeam}
                         />
-
-                        <span className="result">
-                            {match.homeScore} - {match.awayScore}
-                        </span>
-
-                        <Team
-                            name={match.awayTeam}
-                            logo={match.awayLogo}
-                            onLogoClick={setSelectedTeam}
-                        />
-                    </div>
-                </div>
-            ))}
+                    ))
+                )
+            }
 
             {/* ÚLTIMOS JOGOS */}
             <section className="small-section">
@@ -110,7 +126,13 @@ export default function MatchDashboard() {
                             />
                         </button>
                     ))}
-
+                    <TodayMatches matches={todayMatches} />
+                    <button
+                        className="help-button"
+                        onClick={() => setHelpOpen(true)}
+                    >
+                        ?
+                    </button>
                 </div>
 
             </section>
@@ -126,6 +148,10 @@ export default function MatchDashboard() {
                         : []
                 }
                 onClose={() => setSelectedTeam(null)}
+            />
+            <HelpModal
+                isOpen={helpOpen}
+                onClose={() => setHelpOpen(false)}
             />
         </div>
     );
@@ -177,6 +203,45 @@ function SmallMatchCard({
                 alt="Logo do time de fora"
                 className="small-logo"
             />
+            <p className="small-channels">
+                📺 {match.channels?.join(" • ") || "A definir"}
+            </p>
+        </div>
+    );
+}
+
+function CompactMatchCard({ match }) {
+    return (
+        <div className="compact-card">
+
+            <p className="compact-championship">
+                {match.championship}
+            </p>
+
+            <div className="compact-score">
+
+                <img
+                    src={match.homeLogo}
+                    alt={match.homeTeam}
+                    className="compact-logo"
+                />
+
+                <span>
+                    {match.homeScore} - {match.awayScore}
+                </span>
+
+                <img
+                    src={match.awayLogo}
+                    alt={match.awayTeam}
+                    className="compact-logo"
+                />
+
+            </div>
+
+            <p className="compact-channels">
+                📺 {match.channels?.join(" • ") || "A definir"}
+            </p>
+
         </div>
     );
 }

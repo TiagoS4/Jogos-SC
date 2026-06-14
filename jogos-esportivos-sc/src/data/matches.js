@@ -29,7 +29,12 @@ export const featuredMatches = [
         status: "Encerrado",
         time: "21:15",
         date: "09/05/2026",
-        live: false
+        live: false,
+
+        channels: [
+            "Globo",
+            "Premiere"
+        ]
     },
 ];
 
@@ -51,7 +56,12 @@ export const recentMatches = [
 
         date: "02/05/2026",
         time: "xx:xx",
-        status: "Encerrado"
+        status: "Encerrado",
+
+        channels: [
+            "Globo",
+            "Premiere"
+        ]
     },
 
     {
@@ -71,7 +81,12 @@ export const recentMatches = [
 
         date: "26/04/2026",
         time: "xx:xx",
-        status: "Encerrado"
+        status: "Encerrado",
+
+        channels: [
+            "Globo",
+            "Premiere"
+        ]
     },
 
     {
@@ -91,7 +106,12 @@ export const recentMatches = [
 
         date: "10/05/2026",
         time: "xx:xx",
-        status: "Encerrado"
+        status: "Encerrado",
+
+        channels: [
+            "Globo",
+            "Premiere"
+        ]
     },
 
     {
@@ -111,7 +131,12 @@ export const recentMatches = [
 
         date: "06/05/2026",
         time: "20:00",
-        status: "Encerrado"
+        status: "Encerrado",
+
+        channels: [
+            "Globo",
+            "Premiere"
+        ]
     },
 
     {
@@ -131,7 +156,12 @@ export const recentMatches = [
 
         date: "13/05/2026",
         time: "15:00",
-        status: "Encerrado"
+        status: "Encerrado",
+
+        channels: [
+            "Globo",
+            "Premiere"
+        ]
     },
 
     {
@@ -151,7 +181,12 @@ export const recentMatches = [
 
         date: "10/05/2026",
         time: "15:00",
-        status: "Encerrado"
+        status: "Encerrado",
+
+        channels: [
+            "Globo",
+            "Premiere"
+        ]
     },
 
     {
@@ -171,7 +206,12 @@ export const recentMatches = [
 
         date: "06/05/2026",
         time: "15:00",
-        status: "Encerrado"
+        status: "Encerrado",
+
+        channels: [
+            "Globo",
+            "Premiere"
+        ]
     },
 
     {
@@ -191,7 +231,12 @@ export const recentMatches = [
 
         date: "12/05/2026",
         time: "19:30",
-        status: "Encerrado"
+        status: "Encerrado",
+
+        channels: [
+            "Globo",
+            "Premiere"
+        ]
     },
 
     {
@@ -211,7 +256,12 @@ export const recentMatches = [
 
         date: "06/05/2026",
         time: "15:00",
-        status: "Encerrado"
+        status: "Encerrado",
+
+        channels: [
+            "Globo",
+            "Premiere"
+        ]
     },
 
     {
@@ -231,7 +281,12 @@ export const recentMatches = [
 
         date: "02/05/2026",
         time: "18:30",
-        status: "Encerrado"
+        status: "Encerrado",
+
+        channels: [
+            "Globo",
+            "Premiere"
+        ]
     },
 
     {
@@ -251,7 +306,12 @@ export const recentMatches = [
 
         date: "26/04/2026",
         time: "20:30",
-        status: "Encerrado"
+        status: "Encerrado",
+
+        channels: [
+            "Globo",
+            "Premiere"
+        ]
     },
 ];
 
@@ -273,7 +333,12 @@ export const upcomingMatches = [
 
         date: "26/05/2026",
         time: "15:00",
-        status: "Marcado"
+        status: "Marcado",
+
+        channels: [
+            "Globo",
+            "Premiere"
+        ]
     },
 
     {
@@ -293,7 +358,12 @@ export const upcomingMatches = [
 
         date: "17/05/2026",
         time: "15:00",
-        status: "Marcado"
+        status: "Marcado",
+
+        channels: [
+            "Globo",
+            "Premiere"
+        ]
     },
 
     {
@@ -313,7 +383,12 @@ export const upcomingMatches = [
 
         date: "24/05/2026",
         time: "15:00",
-        status: "Marcado"
+        status: "Marcado",
+
+        channels: [
+            "Globo",
+            "Premiere"
+        ]
     },
 
     {
@@ -333,7 +408,12 @@ export const upcomingMatches = [
 
         date: "16/05/2026",
         time: "15:00",
-        status: "Marcado"
+        status: "Marcado",
+
+        channels: [
+            "Globo",
+            "Premiere"
+        ]
     },
 
     {
@@ -353,7 +433,12 @@ export const upcomingMatches = [
 
         date: "17/05/2026",
         time: "18:30",
-        status: "Marcado"
+        status: "Marcado",
+
+        channels: [
+            "Globo",
+            "Premiere"
+        ]
     },
 
     /* {
@@ -568,5 +653,321 @@ export const teams = [
         id: 10,
         name: "Operário",
         logo: OperarioFerroviario
+    }
+];
+
+export const championships = [
+    {
+        id: 0,
+        name: "Todos"
+    },
+    {
+        id: 1,
+        name: "Brasileirão"
+    },
+    {
+        id: 2,
+        name: "Copa do Brasil"
+    },
+    {
+        id: 3,
+        name: "Libertadores"
+    },
+    {
+        id: 4,
+        name: "Champions League"
+    },
+    {
+        id: 5,
+        name: "Premier League"
+    }
+];
+
+export const championshipFeaturedMatches = [
+
+    // BRASILEIRÃO
+
+    {
+        id: 1,
+        championship: "Brasileirão",
+        stadium: "Maracanã",
+
+        homeTeam: "Flamengo",
+        awayTeam: "Palmeiras",
+
+        homeLogo: Criciuma,
+        awayLogo: AtleticoGO,
+
+        homeScore: 2,
+        awayScore: 1,
+
+        status: "Primeiro tempo",
+        time: "35:00",
+        live: true,
+
+        channels: [
+            "Globo",
+            "Premiere"
+        ]
+    },
+
+    {
+        id: 2,
+        championship: "Brasileirão",
+        stadium: "Neo Química Arena",
+
+        homeTeam: "Corinthians",
+        awayTeam: "São Paulo",
+
+        homeLogo: Criciuma,
+        awayLogo: AtleticoGO,
+
+        homeScore: 0,
+        awayScore: 0,
+
+        status: "Primeiro tempo",
+        time: "15:00",
+        live: true,
+
+        channels: [
+            "Globo",
+            "Premiere"
+        ]
+    },
+
+    {
+        id: 3,
+        championship: "Brasileirão",
+        stadium: "Beira-Rio",
+
+        homeTeam: "Internacional",
+        awayTeam: "Grêmio",
+
+        homeLogo: Criciuma,
+        awayLogo: AtleticoGO,
+
+        homeScore: 1,
+        awayScore: 1,
+
+        status: "Segundo tempo",
+        time: "60:00",
+        live: true,
+
+        channels: [
+            "Globo",
+            "Premiere"
+        ]
+    },
+
+    // COPA DO BRASIL
+    {
+        id: 4,
+        championship: "Copa do Brasil",
+        stadium: "Mineirão",
+
+        homeTeam: "Cruzeiro",
+        awayTeam: "Atlético-MG",
+
+        homeLogo: Criciuma,
+        awayLogo: AtleticoGO,
+
+        homeScore: 0,
+        awayScore: 2,
+
+        status: "Segundo tempo",
+        time: "75:00",
+        live: true,
+
+        channels: [
+            "Globo",
+            "Premiere"
+        ]
+    },
+
+    {
+        id: 5,
+        championship: "Copa do Brasil",
+        stadium: "Fonte Nova",
+
+        homeTeam: "Bahia",
+        awayTeam: "Sport",
+
+        homeLogo: Criciuma,
+        awayLogo: AtleticoGO,
+
+        homeScore: 1,
+        awayScore: 0,
+
+        status: "Primeiro tempo",
+        time: "25:00",
+        live: true,
+
+        channels: [
+            "Globo",
+            "Premiere"
+        ]
+    },
+
+    {
+        id: 6,
+        championship: "Copa do Brasil",
+        stadium: "Castelão",
+
+        homeTeam: "Fortaleza",
+        awayTeam: "Ceará",
+
+        homeLogo: Criciuma,
+        awayLogo: AtleticoGO,
+
+        homeScore: 2,
+        awayScore: 2,
+
+        status: "Segundo tempo",
+        time: "80:00",
+        live: true,
+
+        channels: [
+            "Globo",
+            "Premiere"
+        ]
+    },
+
+    // LIBERTADORES
+    {
+        id: 7,
+        championship: "Libertadores",
+        stadium: "Monumental",
+
+        homeTeam: "River Plate",
+        awayTeam: "Boca Juniors",
+
+        homeLogo: Criciuma,
+        awayLogo: AtleticoGO,
+
+        homeScore: 1,
+        awayScore: 0,
+
+        status: "Primeiro tempo",
+        time: "30:00",
+        live: true,
+
+        channels: [
+            "Globo",
+            "Premiere"
+        ]
+    },
+
+    {
+        id: 8,
+        championship: "Libertadores",
+        stadium: "Defensores del Chaco",
+
+        homeTeam: "Olimpia",
+        awayTeam: "Nacional",
+
+        homeLogo: Criciuma,
+        awayLogo: AtleticoGO,
+
+        homeScore: 0,
+        awayScore: 0,
+
+        status: "Primeiro tempo",
+        time: "12:00",
+        live: true,
+
+        channels: [
+            "Globo",
+            "Premiere"
+        ]
+    },
+
+    {
+        id: 9,
+        championship: "Libertadores",
+        stadium: "Centenário",
+
+        homeTeam: "Peñarol",
+        awayTeam: "Flamengo",
+
+        homeLogo: Criciuma,
+        awayLogo: AtleticoGO,
+
+        homeScore: 1,
+        awayScore: 2,
+
+        status: "Segundo tempo",
+        time: "70:00",
+        live: true,
+
+        channels: [
+            "Globo",
+            "Premiere"
+        ]
+    }
+];
+
+export const todayMatches = [
+    {
+        id: 1,
+        championship: "Brasileirão",
+
+        homeTeam: "Flamengo",
+        awayTeam: "Palmeiras",
+
+        homeLogo: Criciuma,
+        awayLogo: Fluminense,
+
+        homeScore: 2,
+        awayScore: 1,
+
+        time: "16:00",
+
+        channels: [
+            "ESPN",
+            "Disney+"
+        ]
+    },
+
+    {
+        id: 2,
+        championship: "Libertadores",
+
+        homeTeam: "River Plate",
+        awayTeam: "Boca Juniors",
+
+        homeLogo: Criciuma,
+        awayLogo: Fluminense,
+
+        homeScore: 0,
+        awayScore: 0,
+
+        time: "19:30",
+
+        channels: [
+            "ESPN",
+            "Disney+"
+        ]
+    },
+
+    {
+        id: 3,
+        championship: "Copa do Brasil",
+
+        homeTeam: "Cruzeiro",
+        awayTeam: "Atlético-MG",
+
+        homeLogo: Criciuma,
+        awayLogo: Fluminense,
+
+        homeScore: 1,
+        awayScore: 1,
+
+        time: "21:00",
+
+        channels: [
+            "Globo",
+            "Premiere"
+        ]
+
     }
 ];

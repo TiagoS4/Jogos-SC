@@ -213,3 +213,111 @@
 
     object-fit: contain;
 }
+
+.championships-container {
+    display: flex;
+    gap: 12px;
+
+    overflow-x: auto;
+
+    padding: 10px 0;
+    margin-bottom: 20px;
+
+    scrollbar-width: thin;
+}
+
+.championship-card {
+    flex-shrink: 0;
+
+    border: none;
+
+    background: white;
+
+    padding: 12px 20px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    transition: 0.2s;
+}
+
+.championship-card:hover {
+    transform: translateY(-2px);
+}
+
+.championship-card.active {
+    background: #2196f3;
+    color: white;
+}
+
+.compact-matches {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(180px, 1fr));
+
+    gap: 15px;
+
+    background-color: white;
+
+    border-radius: 10px;
+}
+
+.compact-channels {
+    margin-top: 8px;
+
+    font-size: 12px;
+
+    color: #777;
+
+    text-align: center;
+}
+
+.compact-championship {
+    font-size: 12px;
+
+    color: gray;
+
+    margin-bottom: 10px;
+}
+
+.compact-score {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+}
+
+.compact-logo {
+    width: 30px;
+    height: 30px;
+}
+
+.help-button {
+    position: fixed;
+
+    bottom: 20px;
+    right: 20px;
+
+    width: 60px;
+    height: 60px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    font-size: 24px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.3);
+}
