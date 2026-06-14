@@ -1,7 +1,7 @@
 import {
     championshipFeaturedMatches,
     championships,
-    featuredMatches,
+    //featuredMatches,
     recentMatches,
     upcomingMatches,
     teamUpcomingMatches,
@@ -157,7 +157,7 @@ export default function MatchDashboard() {
     );
 }
 
-function Team({
+/*function Team({
     name,
     logo,
     onLogoClick
@@ -178,7 +178,7 @@ function Team({
             </button>
         </div>
     );
-}
+}*/
 
 function SmallMatchCard({
     match,
