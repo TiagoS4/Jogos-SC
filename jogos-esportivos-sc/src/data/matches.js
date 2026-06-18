@@ -1,9 +1,11 @@
 import AtleticoGO from "../assets/AtleticoGO.png";
 import Blumenau from "../assets/Blumenau.png";
+import BoaVista from "../assets/BoaVista.jpeg";
 import Caravaggio from "../assets/Caravaggio.png";
 import CRB from "../assets/CRB.png";
 import Criciuma from "../assets/Criciuma.png";
 import Cuiaba from "../assets/Cuiaba.png";
+import DomPedroII from "../assets/DomPedroII.jpeg";
 import Fluminense from "../assets/Fluminense.png";
 import GuaraniDePalhoca from "../assets/GuaraniDePalhoca.png";
 import HercilioLuz from "../assets/HercilioLuz.png";
@@ -13,6 +15,8 @@ import Metropolitano from "../assets/Metropolitano.png";
 import NacaoEsportes from "../assets/NacaoEsportes.png";
 import OperarioFerroviario from "../assets/OperarioFerroviario.png";
 import SCJaraguaDoSul from "../assets/SCJaraguaDoSul.png";
+import SaoJose from "../assets/SaoJose.jpeg";
+import SerLiri from "../assets/SerLiri.jpeg";
 import Tubarao from "../assets/Tubarao.png";
 
 export const featuredMatches = [
@@ -653,7 +657,31 @@ export const teams = [
         id: 10,
         name: "Operário",
         logo: OperarioFerroviario
-    }
+    },
+
+    {
+        id: 11,
+        name: "Boa_Vista",
+        logo: BoaVista
+    },
+
+    {
+        id: 12,
+        name: "Dom_Pedro_II",
+        logo: DomPedroII
+    },
+
+    {
+        id: 13,
+        name: "São_José",
+        logo: SaoJose
+    },
+
+    {
+        id: 14,
+        name: "Ser_Liri",
+        logo: SerLiri
+    },
 ];
 
 export const championships = [
@@ -663,23 +691,23 @@ export const championships = [
     },
     {
         id: 1,
-        name: "Brasileirão"
+        name: "Campeonato Municipal de Criciúma"
     },
     {
         id: 2,
-        name: "Copa do Brasil"
+        name: "Campeonato Municipal de Içara"
     },
     {
         id: 3,
-        name: "Libertadores"
+        name: "Campeonato Municipal de Forquilhinha"
     },
     {
         id: 4,
-        name: "Champions League"
+        name: "Campeonato Municipal de Araranguá"
     },
     {
         id: 5,
-        name: "Premier League"
+        name: "Campeonato Municipal de Tubarão"
     }
 ];
 
@@ -689,7 +717,7 @@ export const championshipFeaturedMatches = [
 
     {
         id: 1,
-        championship: "Brasileirão",
+        championship: "Campeonato Municipal de Criciúma",
         stadium: "Maracanã",
 
         homeTeam: "Flamengo",
@@ -713,7 +741,7 @@ export const championshipFeaturedMatches = [
 
     {
         id: 2,
-        championship: "Brasileirão",
+        championship: "Campeonato Municipal de Criciúma",
         stadium: "Neo Química Arena",
 
         homeTeam: "Corinthians",
@@ -737,7 +765,7 @@ export const championshipFeaturedMatches = [
 
     {
         id: 3,
-        championship: "Brasileirão",
+        championship: "Campeonato Municipal de Criciúma",
         stadium: "Beira-Rio",
 
         homeTeam: "Internacional",
@@ -762,21 +790,21 @@ export const championshipFeaturedMatches = [
     // COPA DO BRASIL
     {
         id: 4,
-        championship: "Copa do Brasil",
-        stadium: "Mineirão",
+        championship: "Campeonato Municipal de Içara",
+        stadium: "Estádio da Associação Liri",
 
-        homeTeam: "Cruzeiro",
-        awayTeam: "Atlético-MG",
+        homeTeam: "Ser_Liri",
+        awayTeam: "São_José",
 
-        homeLogo: Criciuma,
-        awayLogo: AtleticoGO,
+        homeLogo: SerLiri,
+        awayLogo: SaoJose,
 
         homeScore: 0,
-        awayScore: 2,
+        awayScore: 0,
 
-        status: "Segundo tempo",
-        time: "75:00",
-        live: true,
+        status: "Marcado",
+        time: "00:00",
+        live: false,
 
         channels: [
             "Globo",
@@ -786,21 +814,21 @@ export const championshipFeaturedMatches = [
 
     {
         id: 5,
-        championship: "Copa do Brasil",
-        stadium: "Fonte Nova",
+        championship: "Campeonato Municipal de Içara",
+        stadium: "Estádio da Associação Liri",
 
-        homeTeam: "Bahia",
-        awayTeam: "Sport",
+        homeTeam: "Ser_Liri",
+        awayTeam: "Boa_Vista",
 
-        homeLogo: Criciuma,
-        awayLogo: AtleticoGO,
+        homeLogo: SerLiri,
+        awayLogo: BoaVista,
 
-        homeScore: 1,
+        homeScore: 0,
         awayScore: 0,
 
-        status: "Primeiro tempo",
-        time: "25:00",
-        live: true,
+        status: "Marcado",
+        time: "00:00",
+        live: false,
 
         channels: [
             "Globo",
@@ -808,9 +836,9 @@ export const championshipFeaturedMatches = [
         ]
     },
 
-    {
+    /*{
         id: 6,
-        championship: "Copa do Brasil",
+        championship: "Campeonato Municipal de Içara",
         stadium: "Castelão",
 
         homeTeam: "Fortaleza",
@@ -830,12 +858,12 @@ export const championshipFeaturedMatches = [
             "Globo",
             "Premiere"
         ]
-    },
+    },*/
 
     // LIBERTADORES
     {
         id: 7,
-        championship: "Libertadores",
+        championship: "Campeonato Municipal de Forquilhinha",
         stadium: "Monumental",
 
         homeTeam: "River Plate",
@@ -859,7 +887,7 @@ export const championshipFeaturedMatches = [
 
     {
         id: 8,
-        championship: "Libertadores",
+        championship: "Campeonato Municipal de Forquilhinha",
         stadium: "Defensores del Chaco",
 
         homeTeam: "Olimpia",
@@ -883,7 +911,7 @@ export const championshipFeaturedMatches = [
 
     {
         id: 9,
-        championship: "Libertadores",
+        championship: "Campeonato Municipal de Forquilhinha",
         stadium: "Centenário",
 
         homeTeam: "Peñarol",
@@ -909,7 +937,7 @@ export const championshipFeaturedMatches = [
 export const todayMatches = [
     {
         id: 1,
-        championship: "Brasileirão",
+        championship: "Campeonato Municipal de Criciúma",
 
         homeTeam: "Flamengo",
         awayTeam: "Palmeiras",
@@ -930,7 +958,7 @@ export const todayMatches = [
 
     {
         id: 2,
-        championship: "Libertadores",
+        championship: "Campeonato Municipal de Içara",
 
         homeTeam: "River Plate",
         awayTeam: "Boca Juniors",
@@ -951,7 +979,7 @@ export const todayMatches = [
 
     {
         id: 3,
-        championship: "Copa do Brasil",
+        championship: "Campeonato Municipal de Forquilhinha",
 
         homeTeam: "Cruzeiro",
         awayTeam: "Atlético-MG",
@@ -969,5 +997,51 @@ export const todayMatches = [
             "Premiere"
         ]
 
+    }
+];
+
+export const icarenseTable = [
+    {
+        position: 1,
+        team: "Boa_Vista",
+        logo: BoaVista,
+        points: 25,
+        games: 10,
+        wins: 8,
+        draws: 1,
+        losses: 1
+    },
+
+    {
+        position: 2,
+        team: "Ser_Liri",
+        logo: SerLiri,
+        points: 22,
+        games: 10,
+        wins: 7,
+        draws: 1,
+        losses: 2
+    },
+
+    {
+        position: 3,
+        team: "Dom_Pedro_II",
+        logo: DomPedroII,
+        points: 21,
+        games: 10,
+        wins: 6,
+        draws: 3,
+        losses: 1
+    },
+
+    {
+        position: 4,
+        team: "Boa_Vista",
+        logo: BoaVista,
+        points: 18,
+        games: 10,
+        wins: 5,
+        draws: 3,
+        losses: 2
     }
 ];

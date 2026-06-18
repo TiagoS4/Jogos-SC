@@ -6,7 +6,8 @@ import {
     upcomingMatches,
     teamUpcomingMatches,
     teams,
-    todayMatches
+    todayMatches,
+    icarenseTable
 } from "../data/matches";
 
 import "./MatchDashboard.css";
@@ -16,6 +17,7 @@ import TeamModal from "./TeamModal";
 import BigMatchCard from "./BigMatchCard";
 import TodayMatches from "./TodayMatches";
 import HelpModal from "./HelpModal";
+import ChampionshipTable from "./ChampionshipTable";
 
 export default function MatchDashboard() {
     const [selectedMatch, setSelectedMatch] = useState(null);
@@ -134,6 +136,10 @@ export default function MatchDashboard() {
                         ?
                     </button>
                 </div>
+                <ChampionshipTable
+                    title="Classificação - Campeonato Içarense"
+                    standings={icarenseTable}
+                />
 
             </section>
             <MatchModal
