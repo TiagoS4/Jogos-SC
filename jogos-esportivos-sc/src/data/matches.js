@@ -19,6 +19,21 @@ import SaoJose from "../assets/SaoJose.jpeg";
 import SerLiri from "../assets/SerLiri.jpeg";
 import Tubarao from "../assets/Tubarao.png";
 
+import AmigosdoBoaVista from "../assets/AmigosdoBoaVista.png";
+import ArgentinaEsporteClube from "../assets/ArgentinaEsporteClube.jpg";
+import BairroMichel from "../assets/BairroMichel.png";
+import ECSaoJose from "../assets/ECSaoJose.png";
+import LionsEsporteClube from "../assets/LionsEsporteClube.png";
+import Metropol from "../assets/Metropol.png";
+import OuroPreto from "../assets/OuroPreto.png";
+import PexingaColonial from "../assets/PexingaColonial.png";
+import Pnegao from "../assets/Pnegao.jpg";
+import SaoMarcosFC from "../assets/SaoMarcosFC.jpg";
+import TigreUnited from "../assets/TigreUnited.png";
+import UnidosSantaLuzia from "../assets/UnidosSantaLuzia.jpg";
+
+import TimeNaoDefinido from "../assets/TimeNaoDefinido.png"
+
 export const featuredMatches = [
     {
         id: 1,
@@ -46,154 +61,154 @@ export const recentMatches = [
     {
         id: 1,
 
-        championship: "Campeonato Brasileiro Série B",
-        stadium: "Arena Pantanal",
+        championship: "Campeonato Municipal de Criciúma",
+        //stadium: "Arena Pantanal",
 
-        homeTeam: "Cuiabá",
-        awayTeam: "Criciúma",
+        homeTeam: "Argentina",
+        awayTeam: "Pnegão",
 
-        homeLogo: Cuiaba,
-        awayLogo: Criciuma,
+        homeLogo: ArgentinaEsporteClube,
+        awayLogo: Pnegao,
 
-        homeScore: 1,
-        awayScore: 1,
+        homeScore: 2,
+        awayScore: 3,
 
-        date: "02/05/2026",
-        time: "xx:xx",
+        //date: "02/05/2026",
+        //time: "xx:xx",
         status: "Encerrado",
 
-        channels: [
+        /*channels: [
             "Globo",
             "Premiere"
-        ]
+        ]*/
     },
 
     {
         id: 2,
 
-        championship: "Campeonato Brasileiro Série B",
-        stadium: "Heriberto Hulse",
+        championship: "Campeonato Municipal de Criciúma",
+        //stadium: "Heriberto Hulse",
 
-        homeTeam: "Criciúma",
-        awayTeam: "CRB",
+        homeTeam: "São Marcos",
+        awayTeam: "Unidos Santa Luzia",
 
-        homeLogo: Criciuma,
-        awayLogo: CRB,
+        homeLogo: SaoMarcosFC,
+        awayLogo: UnidosSantaLuzia,
 
-        homeScore: 3,
+        homeScore: 0,
         awayScore: 1,
 
-        date: "26/04/2026",
-        time: "xx:xx",
-        status: "Encerrado",
+        //date: "26/04/2026",
+        //time: "xx:xx",
+        //status: "Encerrado",
 
-        channels: [
+        /*channels: [
             "Globo",
             "Premiere"
-        ]
+        ]*/
     },
 
     {
         id: 3,
 
-        championship: "Campeonato Catarinense Série B",
-        stadium: "Aníbal Torres Costa",
+        championship: "Campeonato Municipal de Criciúma",
+        //stadium: "Aníbal Torres Costa",
 
-        homeTeam: "Hercílio Luz",
-        awayTeam: "Guarani de Palhoça",
+        homeTeam: "Pexinga Colonial",
+        awayTeam: "Metropol",
 
-        homeLogo: HercilioLuz,
-        awayLogo: GuaraniDePalhoca,
+        homeLogo: PexingaColonial,
+        awayLogo: Metropol,
 
-        homeScore: 6,
+        homeScore: 3,
         awayScore: 0,
 
-        date: "10/05/2026",
-        time: "xx:xx",
+        //date: "10/05/2026",
+        //time: "xx:xx",
         status: "Encerrado",
 
-        channels: [
+        /*channels: [
             "Globo",
             "Premiere"
-        ]
+        ]*/
     },
 
     {
         id: 4,
 
         championship: "Campeonato Catarinense Série B",
-        stadium: "Arena Joinville",
+        //stadium: "Arena Joinville",
 
-        homeTeam: "Fluminense",
-        awayTeam: "Hercílio Luz",
+        homeTeam: "Boa Vista",
+        awayTeam: "São José",
 
         homeLogo: Fluminense,
-        awayLogo: HercilioLuz,
+        awayLogo: ECSaoJose,
 
         homeScore: 1,
         awayScore: 0,
 
-        date: "06/05/2026",
-        time: "20:00",
+        //date: "06/05/2026",
+        //time: "20:00",
         status: "Encerrado",
 
-        channels: [
+        /*channels: [
             "Globo",
             "Premiere"
-        ]
+        ]*/
     },
 
     {
         id: 5,
 
         championship: "Campeonato Catarinense Série B",
-        stadium: "Aníbal Torres Costa",
+        //stadium: "Aníbal Torres Costa",
 
-        homeTeam: "Hercílio Luz",
-        awayTeam: "Blumenau",
+        homeTeam: "Michel",
+        awayTeam: "Ouro Preto",
 
-        homeLogo: HercilioLuz,
-        awayLogo: Blumenau,
+        homeLogo: BairroMichel,
+        awayLogo: OuroPreto,
 
         homeScore: 0,
-        awayScore: 1,
+        awayScore: 15,
 
-        date: "13/05/2026",
-        time: "15:00",
+        //date: "13/05/2026",
+        //time: "15:00",
         status: "Encerrado",
 
-        channels: [
+        /*channels: [
             "Globo",
             "Premiere"
-        ]
+        ]*/
     },
 
     {
         id: 6,
 
         championship: "Campeonato Catarinense Série B",
-        stadium: "Estádio da Montanha (SC)",
+        //stadium: "Estádio da Montanha (SC)",
 
-        homeTeam: "Caravaggio",
-        awayTeam: "Metropolitano",
+        homeTeam: "Lions",
+        awayTeam: "Tigre United",
 
-        homeLogo: Caravaggio,
-        awayLogo: Metropolitano,
+        homeLogo: LionsEsporteClube,
+        awayLogo: TigreUnited,
 
-        homeScore: 2,
-        awayScore: 0,
+        homeScore: 8,
+        awayScore: 1,
 
-        date: "10/05/2026",
-        time: "15:00",
+        //date: "10/05/2026",
+        //time: "15:00",
         status: "Encerrado",
 
-        channels: [
+        /*channels: [
             "Globo",
             "Premiere"
-        ]
+        ]*/
     },
 
-    {
+    /*{
         id: 7,
 
         championship: "Campeonato Catarinense Série B",
@@ -316,7 +331,7 @@ export const recentMatches = [
             "Globo",
             "Premiere"
         ]
-    },
+    },*/
 ];
 
 export const upcomingMatches = [
@@ -793,96 +808,96 @@ export const championshipFeaturedMatches = [
         championship: "Campeonato Municipal de Içara",
         stadium: "Estádio da Associação Liri",
 
-        homeTeam: "Ser_Liri",
-        awayTeam: "São_José",
+        homeTeam: "Boa Vista",
+        awayTeam: "Barracão",
 
-        homeLogo: SerLiri,
-        awayLogo: SaoJose,
+        homeLogo: TimeNaoDefinido,
+        awayLogo: TimeNaoDefinido,
 
         homeScore: 0,
         awayScore: 0,
 
         status: "Marcado",
-        time: "00:00",
+        time: "28/06/2026 15:00",
         live: false,
 
-        channels: [
+        /*channels: [
             "Globo",
             "Premiere"
-        ]
+        ]*/
     },
 
     {
         id: 5,
         championship: "Campeonato Municipal de Içara",
-        stadium: "Estádio da Associação Liri",
+        stadium: "Estádio da Esplanada",
 
-        homeTeam: "Ser_Liri",
-        awayTeam: "Boa_Vista",
+        homeTeam: "Dom Pedro II",
+        awayTeam: "Caiçara",
 
-        homeLogo: SerLiri,
-        awayLogo: BoaVista,
+        homeLogo: TimeNaoDefinido,
+        awayLogo: TimeNaoDefinido,
 
         homeScore: 0,
         awayScore: 0,
 
         status: "Marcado",
-        time: "00:00",
+        time: "28/06/2026 00:00",
         live: false,
 
-        channels: [
+        /*channels: [
             "Globo",
             "Premiere"
-        ]
+        ]*/
     },
 
-    /*{
+    {
         id: 6,
         championship: "Campeonato Municipal de Içara",
-        stadium: "Castelão",
+        stadium: "Local não definido",
 
-        homeTeam: "Fortaleza",
-        awayTeam: "Ceará",
+        homeTeam: "São José",
+        awayTeam: "Vila Nova",
 
-        homeLogo: Criciuma,
-        awayLogo: AtleticoGO,
+        homeLogo: TimeNaoDefinido,
+        awayLogo: TimeNaoDefinido,
 
-        homeScore: 2,
-        awayScore: 2,
+        homeScore: 0,
+        awayScore: 0,
 
-        status: "Segundo tempo",
-        time: "80:00",
-        live: true,
+        status: "Marcado",
+        time: "28/06/2026 00:00",
+        live: false,
 
-        channels: [
+        /*channels: [
             "Globo",
             "Premiere"
-        ]
-    },*/
+        ]*/
+    },
 
     // LIBERTADORES
     {
         id: 7,
-        championship: "Campeonato Municipal de Forquilhinha",
-        stadium: "Monumental",
+        championship: "Campeonato Municipal de Içara",
+        stadium: "Local não definido",
 
-        homeTeam: "River Plate",
-        awayTeam: "Boca Juniors",
+        homeTeam: "Juventus",
+        awayTeam: "Ser Liri",
 
-        homeLogo: Criciuma,
-        awayLogo: AtleticoGO,
+        homeLogo: TimeNaoDefinido,
+        awayLogo: TimeNaoDefinido,
 
-        homeScore: 1,
+        homeScore: 0,
         awayScore: 0,
 
-        status: "Primeiro tempo",
-        time: "30:00",
-        live: true,
+        status: "Marcado",
+        time: "28/06/2026 00:00",
+        live: false,
 
-        channels: [
+        /* channels: [
             "Globo",
             "Premiere"
-        ]
+        ]*/
     },
 
     {

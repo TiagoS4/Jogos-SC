@@ -210,7 +210,7 @@ function SmallMatchCard({
                 className="small-logo"
             />
             <p className="small-channels">
-                📺 {match.channels?.join(" • ") || "A definir"}
+                📺 {match.channels?.join(" • ") || "Sem informações"}
             </p>
         </div>
     );
@@ -245,7 +245,7 @@ function CompactMatchCard({ match }) {
             </div>
 
             <p className="compact-channels">
-                📺 {match.channels?.join(" • ") || "A definir"}
+                📺 {match.channels?.join(" • ") || "Sem informações"}
             </p>
 
         </div>
